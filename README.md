@@ -2,7 +2,7 @@
 
 This repository contains a simple implementation of a Binary Search Tree (BST) in C. The program demonstrates the basic operations of a BST, such as inserting nodes, performing in-order and post-order traversals, and freeing the allocated memory for the tree.
 
-## Features
+## 🚀 Features
 
 - **Create Node**: Function to create a new node in the tree.
 - **Insert**: Function to insert a new value into the BST.
@@ -10,19 +10,25 @@ This repository contains a simple implementation of a Binary Search Tree (BST) i
 - **Post-Order Traversal**: Function to print the tree nodes in post-order.
 - **Memory Management**: Function to free all allocated memory for the tree nodes.
 
-## Functions
+## ⚙️ Usage
 
-### `Node* createNode(int data)`
-Creates a new node with the given `data` and returns a pointer to it. The node's left and right child pointers are initialized to `NULL`.
+```c
+// Create a new node with data
+Node* createNode(int data);
 
-### `Node* insert(Node* root, int data)`
-Inserts a new node with the given `data` into the tree. The function recursively finds the correct position for the new node based on the binary search tree properties.
+// Insert a value into the binary search tree
+Node* insert(Node* root, int data);
 
-### `void inorder(Node* root)`
-Performs an in-order traversal of the binary search tree and prints the node values. The traversal visits nodes in ascending order.
+// Perform an in-order traversal and print node values
+void inorder(Node* root);
 
-### `void postfix(Node* root)`
-Performs a post-order traversal of the binary search tree and prints the node values. The traversal visits the left and right subtrees before the current node.
+// Perform a post-order traversal and print node values
+void postfix(Node* root);
 
-### `void freeTree(Node* root)`
-Recursively frees the memory allocated for the tree nodes to prevent memory leaks.
+// Free all allocated memory for the tree
+void freeTree(Node* root);
+```
+
+## License
+
+Distributed under the Unlicense License. See `LICENSE.txt` for more information.
